@@ -1,0 +1,311 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    
+    margin: 0;
+    background-color: hsl(270, 20%, 96%);
+}
+@media (min-width:769px) {
+    body {
+        height: 730px;
+    }
+}
+.top-left {
+    width: 35%;
+    height: 85%;
+    position: relative;
+    top: 0;
+    left: -80px;
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 0 0 45% 50% ;
+    z-index: -1;
+}
+@media (max-width:768px) {
+    .top-left {
+        width: 87%;
+        border-radius: 0 0 75% 20%;
+        position: absolute;
+    }
+}
+.parent {
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    height: 550px;
+    position: absolute;
+    top: 47px;
+    left: 380px;
+    border-radius: 35px;
+    z-index: 10;
+    padding: 12px;
+}
+@media (max-width:768px) {
+    .parent {
+        left: 20%;
+        top: 60px;
+    }
+}
+@media (min-width:769px) and (max-width:1290px) {
+    .parent {
+        left: 260px;
+    }
+}
+.parent .top {
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%),hsl(293, 100%, 63%));
+    border-radius: 30px 30px 5px 5px ;
+    padding: 0 0 10px 0;
+}
+.parent .top .white {
+    width: 200px;
+    height: 25px;
+    border-radius: 0 0 20px 20px;
+    margin: auto;
+    background-color: #fff;
+}
+.parent .info {
+    display: flex;
+    justify-content: space-between;
+}
+.parent .info .left i {
+    position: relative;
+    left: 15px;
+    top: 20px;
+}
+.parent .info .left .img {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: -15px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parent .info .left .img img {
+    width: 28px;
+    border-radius: 50%;
+}
+.parent .info .left .person {
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+    margin-top: -40px;
+}
+.parent .info .left .person .name {
+    color: #fff;
+    font-size: 16px;
+}
+.parent .info .left .person .avl {
+    color: hsl(276, 100%, 81%);
+    font-size: 12px;
+    margin-top: -10px;
+}
+.parent .info .right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.parent .info .right i {
+    font-size: 2px;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    color: #fff;
+}
+.parent .section {
+    background-color: hsl(270, 20%, 96%);
+    height: 460px;
+    border-radius: 5px 5px 30px 30px;
+}
+.parent .section .one ,
+.parent .section .two {
+    width: 143px;
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(268, 48%, 93%);
+    border-radius: 10px 10px 10px 2px;
+    font-size: 10px;
+    padding: 5px 10px;
+    margin: 0px 0 10px 13px;
+    line-height: 1.5;
+    position: relative;
+    top: 10px;
+}
+
+.parent .section .imgs {
+    position: absolute;
+    right: 22px;
+    margin-top: 10px;
+}
+.parent .section .imgs img {
+    width: 50px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.parent .section .three , 
+.parent .section .four {
+    font-size: 10px;
+    position: absolute;
+    right: 23px;
+    color: hsl(271, 15%, 43%);
+    background-color: hsl(0, 0%, 100%);
+    padding: 5px 10px;
+    line-height: 1.5;
+}
+.parent .section .three {
+    width: 140px;
+    border-radius: 10px 10px 2px 10px;
+    margin-top: 70px;
+}
+.parent .section .four {
+    width: fit-content;
+    margin-top: 115px;
+    border-radius: 10px 5px 0px 10px;
+}
+.parent .section .five {
+    width: 140px;
+    color: hsl(276, 55%, 52%);
+    background-color: hsl(268, 48%, 93%);
+    border-radius: 10px 10px 10px 2px;
+    font-size: 10px;
+    padding: 5px 10px;
+    margin: 150px 0 10px 13px;
+    line-height: 1.5;
+    position: absolute;
+}
+.parent .section .six ,
+.parent .section .seven {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 185px;
+    padding: 2px 12px;
+    background-image: linear-gradient(to right,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 10px 10px 10px 2px;
+    margin-left: 10px;
+    color: white;
+}
+.parent .section .six {
+    margin-top: 215px;
+}
+.parent .section .seven {
+    margin-top: 260px;
+}
+.parent .section .price {
+    font-weight: 600;
+}
+.parent .section .walk {
+    font-size: 10px;
+    color: #ffffff9c;
+    margin-left: 7px;
+    top: -3px;
+    position: relative;
+}
+.parent .section .time span:first-child {
+    width: 10px;
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid #ffffff6e;
+    border-radius: 50%;
+    margin-top: 7px;
+    height: 10px;
+}
+.parent .section form input {
+    font-size: 10px;
+    padding: 12px 20px;
+    width: 235px;
+    border-radius: 50px;
+    margin-top: 314px;
+    margin-left: 10px;
+    border: none;
+    outline: none;
+}
+.parent .section form input::placeholder {
+    color: hsl(206, 6%, 79%);
+}
+.parent .section form button {
+    width: 28px;
+    border-radius: 50%;
+    height: 28px;
+    margin-left: 252px;
+    top: -34px;
+    position: relative;
+    background-color: hsl(271, 36%, 24%);
+    color: white;
+}
+.booking {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-52%, -56%);
+}
+@media (max-width:768px) {
+    .booking {
+        margin-top: 440px;
+        text-align: center;
+    }
+}
+@media (width:540px) {
+    .booking {
+        margin-left: -95px;
+    }
+}
+@media (min-width:769px) and (max-width:1150px) {
+    .booking {
+        position: relative;
+        margin-top: 150px;
+        margin-left: -301px;
+        text-align: center;
+    }
+}
+@media (min-width:1151px) and (max-width:1290px) {
+    .booking {
+        margin-left: 40px;
+        width: fit-content;
+    }
+}
+.booking .simple {
+    font-size: 40px;
+    font-weight: 500;
+    color: hsl(271, 36%, 24%);
+}
+@media (max-width:768px) {
+    .booking .simple {
+        font-size: 50px;
+        margin-top: 20px;
+        margin-bottom: -5px;
+    }
+}
+.booking .stay {
+    line-height: 1.9;
+    color: hsl(270, 7%, 64%);
+    margin-top: 10px;
+}
+@media (max-width:768px) {
+    .booking .stay {
+        font-size: 23px;
+        line-height: 1.4;
+    }
+}
+.bottom-right {
+    width: 520px;
+    height: 100%;
+    position: fixed;
+    bottom: -60px;
+    right: -200px;
+    background-image: linear-gradient(hsl(293 100% 63% / 3%), hsl(264 100% 61% / 10%));
+    border-radius: 45% 50% 0 0 ;
+    z-index: -1;
+}
+@media (max-width:768px) {
+    .bottom-right {
+        width: 430px;
+        height: 55%;
+    }
+}
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 40px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
